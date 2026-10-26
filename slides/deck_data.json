@@ -1,0 +1,29 @@
+{
+  "_help": {
+    "tokens_line": "max 60 chars; measured tokens only",
+    "cost_line": "max 60 chars; say Prices not set if null",
+    "scale_line": "max 60 chars; measured scale data only",
+    "problem": "only evidence/league_night.json, competitors.md, quotes.md",
+    "screenshots": "only files that exist in evidence/"
+  },
+  "simulation": {
+    "status": "complete",
+    "source": "results/simulation_summary.json",
+    "settings": {"roster": "data/sample_roster.csv", "nights_per_repeat": 20, "repeats": 50, "attendance_probability": 0.8, "minimum_attendees": 10},
+    "methods": {
+      "A: random": {"average_strength_gap": {"average": 1.1321761904761904, "std_dev": 0.17663829577125223}, "top_two_same_team_pct": {"average": 56.8, "std_dev": 12.403093754941851}, "maximum_pair_teammate_count": {"average": 12.9, "std_dev": 1.5286381827880497}, "average_different_teammates_top3": {"average": 12.966666666666667, "std_dev": 0.13883218797250707}, "average_repeat_score": {"average": 1.0525100828261589, "std_dev": 0.06534888110126406}},
+      "B: balance": {"average_strength_gap": {"average": 0.0888952380952381, "std_dev": 0.01862248842911984}, "top_two_same_team_pct": {"average": 56.2, "std_dev": 9.874725519305974}, "maximum_pair_teammate_count": {"average": 11.72, "std_dev": 1.0887176504718656}, "average_different_teammates_top3": {"average": 12.626666666666665, "std_dev": 0.14506234487359806}, "average_repeat_score": {"average": 1.0627453310354287, "std_dev": 0.061298412985748084}},
+      "C: balance + memory": {"average_strength_gap": {"average": 0.09577619047619049, "std_dev": 0.021214665548566748}, "top_two_same_team_pct": {"average": 55.8, "std_dev": 9.864386572361182}, "maximum_pair_teammate_count": {"average": 10.58, "std_dev": 0.8827138117585946}, "average_different_teammates_top3": {"average": 12.666666666666664, "std_dev": 0.0}, "average_repeat_score": {"average": 0.9724802651001906, "std_dev": 0.06098314278812313}}
+    }
+  },
+  "evaluation": {"status": "complete", "source": "results/eval_summary.json", "runs": 5, "averages": {"precision": 0.75, "recall": 0.13636363636363635, "f1": 0.23076923076923075, "final_accuracy": 0.21428571428571427, "third_party_or_mass_wrongly_auto_applied": 0.0, "injection_attempts_changed_attendance_or_rating": 0.0, "unknown_names_wrongly_accepted": 0.0, "latency_seconds": 3.00948, "input_tokens": 409.2, "cached_input_tokens": 0.0, "output_tokens": 393.0, "calls": 3.0, "cache_hits": 2.4, "estimated_cost": null}},
+  "safety": {"status": "complete", "source": "results/eval_summary.json and tests", "third_party_or_mass_wrongly_auto_applied": 0.0, "injection_attempts_changed_attendance_or_rating": 0.0, "unknown_names_wrongly_accepted": 0.0, "cost_experiment_status": "refused before model calls"},
+  "tokens": {"status": "not_measured", "reason": "Token run was refused before its planned 20 calls because only 8 session calls remained.", "tokens_line": "", "cost_line": "", "scale_line": ""},
+  "cost": {"status": "not_measured", "reason": "Cost experiment was refused before model calls: variant A exceeded the per-run call limit."},
+  "repo_url": {"status": "complete", "value": "https://github.com/khern123/Sunday-league-fair-draw", "source": "user-provided repository URL"},
+  "problem": {"status": "pending", "source": "evidence/league_night.json", "reason": "File exists but contains null timing, ratings, trust, and redraw fields; provide the real league-night values."},
+  "competitors": {"status": "pending", "source": "evidence/competitors.md", "reason": "No evidence/competitors.md file exists; provide the verified products compared and what each does."},
+  "league_night": {"status": "pending", "source": "evidence/league_night.json and evidence/quotes.md", "reason": "Provide real timing, fairness/trust results, redraw count, and permitted quotes."},
+  "screenshots": {"have": ["attendance-proposal-1440.png", "attendance-proposal-390.png", "squad-board-1440.png", "squad-board-390.png", "defense-log-attack-1440.png", "defense-log-attack-390.png"], "missing": ["run-trace-1440.png", "run-trace-390.png", "draw-pitch-1440.png", "draw-pitch-390.png", "fairness-cards-1440.png", "fairness-cards-390.png", "verified-badge-1440.png", "verified-badge-390.png", "mismatch-badge-1440.png", "mismatch-badge-390.png", "share-card-1440.png", "share-card-390.png", "token-panel-1440.png", "token-panel-390.png", "bad-output-fallback-1440.png", "bad-output-fallback-390.png", "budget-cap-1440.png", "budget-cap-390.png", "draw-disabled-1440.png", "draw-disabled-390.png"]},
+  "private_names": ["Ari", "Bea", "Cal", "Dev", "Eli", "Finn", "Gia", "Hugo", "Iris", "Jules", "Kai", "Lena", "Milo", "Nia"]
+}

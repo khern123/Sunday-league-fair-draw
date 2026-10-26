@@ -1,0 +1,8 @@
+[
+  {"date": "2026-01-04", "teams": {"Team A": ["Ari", "Dev", "Gia", "Iris", "Milo", "Hugo", "Lena"], "Team B": ["Bea", "Cal", "Eli", "Finn", "Jules", "Kai", "Nia"]}},
+  {"date": "2026-01-11", "teams": {"Team A": ["Bea", "Dev", "Finn", "Hugo", "Jules", "Lena", "Nia"], "Team B": ["Ari", "Cal", "Eli", "Gia", "Iris", "Kai", "Milo"]}},
+  {"date": "2026-01-18", "teams": {"Team A": ["Cal", "Eli", "Gia", "Iris", "Kai", "Milo", "Nia"], "Team B": ["Ari", "Bea", "Dev", "Finn", "Hugo", "Jules", "Lena"]}},
+  {"date": "2026-01-25", "teams": {"Team A": ["Ari", "Cal", "Finn", "Iris", "Lena", "Milo", "Nia"], "Team B": ["Bea", "Dev", "Eli", "Gia", "Hugo", "Jules", "Kai"]}},
+  {"date": "2026-02-01", "teams": {"Team A": ["Bea", "Eli", "Gia", "Hugo", "Kai", "Lena", "Milo"], "Team B": ["Ari", "Cal", "Dev", "Finn", "Iris", "Jules", "Nia"]}},
+  {"date": "2026-02-08", "teams": {"Team A": ["Ari", "Dev", "Eli", "Gia", "Jules", "Kai", "Nia"], "Team B": ["Bea", "Cal", "Finn", "Hugo", "Iris", "Lena", "Milo"]}}
+]

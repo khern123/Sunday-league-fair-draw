@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sunday League Fair Draw — Project Report</title>
+<style>
+@page { size: letter; margin: .75in; }
+:root { --navy:#050b1a; --surface:#0d1b3a; --surface2:#132850; --blue:#3b82f6; --cyan:#22d3ee; --text:#f2f7ff; --muted:#a9bcdd; --line:rgba(120,170,255,.28); --danger:#ff4d6d; }
+* { box-sizing:border-box; }
+html { background:#dfe8f7; }
+body { margin:0; color:var(--text); background:linear-gradient(135deg,#0b1e4a,var(--navy) 55%); font:15px/1.55 "Segoe UI",Arial,sans-serif; }
+.report { max-width:8in; margin:0 auto; padding:40px 0; }
+section { min-height:9.4in; padding:30px 34px; margin:0 0 26px; background:var(--surface); border:1px solid var(--line); border-radius:18px; box-shadow:0 14px 40px #020611aa; break-after:page; page-break-after:always; }
+section:last-child { break-after:auto; page-break-after:auto; }
+h1,h2,h3 { color:var(--text); line-height:1.15; margin:0 0 16px; }
+h1 { font-size:34px; letter-spacing:-.03em; }
+h2 { font-size:25px; border-bottom:1px solid var(--line); padding-bottom:10px; }
+h3 { font-size:17px; color:var(--cyan); margin-top:24px; }
+p { max-width:70ch; }
+a { color:var(--cyan); }
+.eyebrow { color:var(--cyan); font-size:12px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; }
+.lead { color:var(--muted); font-size:18px; }
+.placeholder { display:block; margin:18px 0; padding:15px 17px; color:#ffd9df; background:#401426; border:1px solid var(--danger); border-radius:10px; font-weight:700; }
+.note { padding:14px 16px; background:var(--surface2); border-left:4px solid var(--blue); border-radius:8px; color:var(--muted); }
+.diagram { width:100%; height:auto; margin:22px 0; background:#081735; border-radius:12px; }
+.evidence { margin:18px 0; text-align:center; }
+.evidence img { max-width:100%; max-height:6.4in; object-fit:contain; border:1px solid var(--line); border-radius:10px; }
+.caption { color:var(--muted); font-size:12px; margin-top:6px; }
+@media print { html { background:#fff; } body { print-color-adjust:exact; -webkit-print-color-adjust:exact; } .report { padding:0; } section { margin:0; box-shadow:none; border-radius:0; } }
+</style>
+</head>
+<body>
+<main class="report">
+<section id="title">
+  <div class="eyebrow">01 · AI Foundations · Project report</div>
+  <h1>1. Title + links</h1>
+  <p class="lead"><strong>Sunday League Fair Draw</strong></p>
+  <p><strong>Author:</strong> <span class="placeholder">[MY INPUT NEEDED: your name]</span></p>
+  <p><strong>GitHub repository:</strong> <span class="placeholder">[MY INPUT NEEDED: exact Canvas submission repository URL]</span></p>
+  <p><strong>App:</strong> Local app, run instructions below.</p>
+  <p>A code-owned, reproducible way to turn a confirmed attendance list into balanced teams, with optional AI assistance for reading attendance chat and writing announcements.</p>
+</section>
+
+<section id="motivation">
+  <div class="eyebrow">02</div><h2>2. Motivation</h2>
+  <p>This app is for my Sunday mini league, where the organizer needs a quick and trusted way to turn a changing attendance list into teams.</p>
+  <p><strong>Who has the problem:</strong> players and the organizer in the Sunday mini league. Attendance arrives informally, often through a group chat, and the final list can change close to kickoff.</p>
+  <p><strong>Current process:</strong> <span class="placeholder">[MY INPUT NEEDED: describe exactly how teams are picked today: who decides, what information they use, and where the decision is written down]</span></p>
+  <p>When the process is manual, it can consume time during the narrow window before a match. It can also create arguments about who was included, whether teams are balanced, and whether the same people are repeatedly grouped together. The larger cost is trust: players cannot easily reproduce or verify the decision after it is made.</p>
+  <p><strong>Local evidence:</strong> <span class="placeholder">[MY INPUT NEEDED: approximate time spent, examples of disagreements, and why this matters to your league]</span></p>
+  <p>The project addresses that trust problem by requiring organizer confirmation, calculating teams in code, publishing a seed and receipt, and keeping optional AI assistance separate from the draw decision.</p>
+</section>
+
+<section id="new">
+  <div class="eyebrow">03</div><h2>3. What is new here</h2>
+  <p>The design separates interpretation from decisions: code owns parsing, attendance resolution, team creation, and verification; AI is optional and constrained to defined language tasks.</p>
+  <svg class="diagram" viewBox="0 0 900 220" role="img" aria-label="Pipeline from chat to verified draw">
+    <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#22d3ee"/></marker></defs>
+    <g fill="#132850" stroke="#3b82f6" stroke-width="2"><rect x="20" y="78" width="145" height="64" rx="12"/><rect x="190" y="78" width="145" height="64" rx="12"/><rect x="360" y="78" width="145" height="64" rx="12"/><rect x="530" y="78" width="145" height="64" rx="12"/><rect x="700" y="78" width="180" height="64" rx="12"/></g>
+    <g stroke="#22d3ee" stroke-width="3" marker-end="url(#arrow)"><path d="M165 110h25"/><path d="M335 110h25"/><path d="M505 110h25"/><path d="M675 110h25"/></g>
+    <g fill="#f2f7ff" font-family="Segoe UI,Arial" font-size="16" text-anchor="middle"><text x="92" y="105">Chat</text><text x="92" y="126">data</text><text x="262" y="105">AI claims</text><text x="262" y="126">schema</text><text x="432" y="105">Code</text><text x="432" y="126">resolution</text><text x="602" y="105">Organizer</text><text x="602" y="126">confirmation</text><text x="790" y="105">Seeded draw</text><text x="790" y="126">+ receipt</text></g>
+  </svg>
+  <h3>Comparison</h3>
+  <p><span class="placeholder">[MY INPUT NEEDED: insert the verified list of existing products you compared against]</span></p>
+  <p>For each product, record only what was checked: what it does, whether it supports this league’s attendance workflow, whether its team assignment is reproducible from a published seed, and whether it provides a public verification receipt.</p>
+  <p><span class="placeholder">[MY INPUT NEEDED: competitor comparison table and source links]</span></p>
+  <h3>What this app does differently</h3>
+  <p>The implemented design makes the boundary explicit: code parses timestamps and senders, resolves claims, requires organizer confirmation, creates the draw, and verifies the result. The optional model reads attendance chat and writes an announcement; it does not choose teams or assign ratings.</p>
+  <p>The draw is seeded and the public receipt can be checked later. I did not find one that does X until the comparison list and checks are supplied: <span class="placeholder">[MY INPUT NEEDED: replace “X” with a verified comparison finding, or state that no such checked difference was found]</span></p>
+</section>
+
+<section id="agents"><div class="eyebrow">04</div><h2>4. The agents</h2>
+<p>The system uses small, bounded components. Each model output is treated as untrusted data and is validated before it can affect the application.</p>
+<h3>Components and allowed tools</h3>
+<ul>
+<li><strong>Chat splitter — code:</strong> parses supported timestamps and senders, attaches continuation lines to the previous message, applies limits, and reports skipped or truncated lines. It uses no model tools.</li>
+<li><strong>Attendance agent — model:</strong> receives numbered message indexes and text plus roster names and aliases; returns only schema-validated attendance claims. It uses only the centralized model client.</li>
+<li><strong>Claim resolver — code:</strong> resolves exact names and aliases, applies only the latest self claim, flags third-party and mass claims, and creates pending guests without ratings. It uses no model tools.</li>
+<li><strong>Claim verifier — code:</strong> checks message indexes, verbatim evidence, allowed statuses, and forbidden extra fields. It uses no model tools.</li>
+<li><strong>Organizer confirmation — human control:</strong> reviews and edits proposed attendance, confirms the squad, and types guest ratings. It is not an autonomous agent.</li>
+<li><strong>Draw engine — code tool:</strong> `fairdraw.draw.draw()` creates teams from the confirmed roster, settings, history, and seed. It uses no tokens and no model tools.</li>
+<li><strong>Draw verifier — code:</strong> checks attendance coverage, unknown names, team-size balance, and seed replay. It uses no model tools.</li>
+<li><strong>Announcement agent — model:</strong> receives only the public receipt and sanitized organizer note, then writes a short announcement. The code appends the exact seed, draw number, and hash.</li>
+<li><strong>Announcement verifier — code:</strong> checks names and numbers against the allowed receipt data; after one retry it shows a code-generated fallback if needed.</li>
+<li><strong>Optional assistant agent — organizer-only model:</strong> may plan only these allowlisted calls: `propose_attendance(chat_text)`, `set_status(player, status)`, `add_guest(name)`, `confirm_attendance()`, `run_draw(num_teams, seed_mode)`, `verify_draw()`, `write_announcement(note)`, and `save_night()`. Code validates and executes calls one at a time, with approval for saved-state changes.</li>
+</ul>
+<h3>Organization and handoffs</h3>
+<svg class="diagram" viewBox="0 0 900 300" role="img" aria-label="Attendance, draw, and announcement pipeline"><defs><marker id="arrow2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#22d3ee"/></marker></defs><g fill="#132850" stroke="#3b82f6" stroke-width="2"><rect x="20" y="30" width="160" height="54" rx="10"/><rect x="220" y="30" width="160" height="54" rx="10"/><rect x="420" y="30" width="160" height="54" rx="10"/><rect x="620" y="30" width="240" height="54" rx="10"/><rect x="220" y="190" width="160" height="54" rx="10"/><rect x="420" y="190" width="160" height="54" rx="10"/><rect x="620" y="190" width="240" height="54" rx="10"/></g><g stroke="#22d3ee" stroke-width="3" marker-end="url(#arrow2)"><path d="M180 57h40"/><path d="M380 57h40"/><path d="M580 57h40"/><path d="M740 84v106"/><path d="M620 217H580"/><path d="M420 217H380"/></g><g fill="#f2f7ff" font-size="14" text-anchor="middle"><text x="100" y="53">Chat splitter</text><text x="100" y="72">code</text><text x="300" y="53">Attendance agent</text><text x="300" y="72">LLM</text><text x="500" y="53">Claim resolver</text><text x="500" y="72">+ verifier</text><text x="740" y="53">Organizer confirmation</text><text x="300" y="213">Draw engine</text><text x="300" y="232">code tool</text><text x="500" y="213">Draw verifier</text><text x="500" y="232">replay</text><text x="740" y="213">Announcement agent + verifier</text></g></svg>
+<h3>Model choice</h3><p>The course key uses <strong>gpt-6-luna</strong> through the centralized Portkey client. A small model is sufficient for the language tasks because the draw, validation, seed replay, ratings, and team assignment remain code-owned.</p>
+<h3>One real run</h3><p><span class="placeholder">[MISSING EVIDENCE: trace panel screenshot and screenshots showing each agent’s real output]</span></p><p>Walkthrough to complete from the trace: chat splitter → attendance agent → claim resolver → claim verifier → organizer confirmation → draw engine → draw verifier → announcement agent → announcement verifier. No real run is described here until the trace and screenshots are attached.</p>
+</section>
+<section id="tokenomics"><div class="eyebrow">05</div><h2>5. Tokenomics</h2>
+<p>The recorded token measurement did not complete: <code>results/token_runs.json</code> has status <strong>refused</strong> because the planned 20 calls exceeded the remaining session budget. Therefore this report does not claim a typical-run token count, cost per run, or monthly user cost.</p>
+<p>Prices are not set. The scaling report states: “prices not set; fill config.PRICING from course materials.” No cost number is invented here.</p>
+<p>The intended cost controls are batching attendance messages, the application cache, centralized per-run/session/daily call budgets, and keeping the draw engine in code. The draw engine uses zero tokens. The cost experiment was also refused before calls because variant A required 30 calls in one run, above the configured per-run limit of 8.</p>
+<p><strong>Did cost cutting make the app worse?</strong> No measured comparison can be claimed because <code>results/cost_experiment.json</code> contains a refusal rather than accuracy results. This is a limitation, not evidence that batching or caching improves accuracy.</p>
+<span class="placeholder">[MISSING EVIDENCE: completed token_runs table, cost experiment table, and token-panel screenshot]</span></section>
+<section id="safety"><div class="eyebrow">06</div><h2>6. Safety</h2>
+<h3>What could go wrong</h3><p>Chat can contain prompt-injection text or attempts to game attendance. A model can invent a player, quote, rating, or action. An organizer command could request an unsupported roster edit or create a loop. Repeated clicks or malformed input could overspend. Private ratings and real player data could also leak into public outputs.</p>
+<h3>Controls built into the system</h3><p>Messages are separated from instructions and sanitized. The schema has no team or rating fields. Code parses timestamps and senders, resolves exact names and aliases, rejects mass claims and unknown names, keeps third-party claims pending confirmation, and gives guests no rating until the organizer enters one. The draw is code-only and cannot run before confirmation. Claims, draws, and announcements have separate verifiers. The model gateway has timeout/retry limits, application caching, and per-run, session, and daily budgets. Public receipts omit private ratings.</p>
+<h3>Evidence that defenses work</h3><p>The attack, malfunction, and overspending suites reported <strong>7 passed</strong> in the recorded targeted run. The evaluator’s safety metrics were: third-party or mass claims wrongly auto-applied <strong>0</strong>; injection attempts changing attendance or ratings <strong>0</strong>; unknown names wrongly accepted <strong>0</strong>. Source: targeted test output and <code>results/eval_summary.json</code>.</p>
+<table><tr><th>Test/risk</th><th>What was blocked</th></tr><tr><td>Instruction injection</td><td>Untrusted text was logged as a defense event and did not create a claim or action.</td></tr><tr><td>Fake system message</td><td>Role-spoofing text remained message data.</td></tr><tr><td>Third-party claim</td><td>Held for organizer confirmation; not auto-applied.</td></tr><tr><td>Mass claim</td><td>Rejected and logged.</td></tr><tr><td>Guest rating in chat</td><td>Guest remained pending without a rating.</td></tr><tr><td>Unknown player</td><td>Flagged and not added to the roster.</td></tr><tr><td>Overspending</td><td>Budget preflight refused experiments exceeding configured limits.</td></tr></table>
+<span class="placeholder">[MISSING EVIDENCE: `verified-badge-1440.png`, `mismatch-badge-1440.png`, and completed defense-demo screenshots]</span></section>
+<section id="impact"><div class="eyebrow">07</div><h2>7. Impact</h2>
+<h3>Simulation</h3><p>Source: <code>results/simulation_summary.json</code> and <code>results/simulation_table.md</code>. The sample roster was used; settings were 20 nights per repeat, 50 repeats, 0.8 attendance probability, minimum 10 attendees, and 300 candidates per draw.</p>
+<table><tr><th>Method</th><th>Strength gap</th><th>Top two same team</th><th>Max pair repeats</th><th>Avg top-3 teammates</th><th>Repeat score</th></tr><tr><td>A random</td><td>1.132 ± 0.177</td><td>56.8% ± 12.4%</td><td>12.90 ± 1.53</td><td>12.97 ± 0.14</td><td>1.053 ± 0.065</td></tr><tr><td>B balance</td><td>0.089 ± 0.019</td><td>56.2% ± 9.9%</td><td>11.72 ± 1.09</td><td>12.63 ± 0.15</td><td>1.063 ± 0.061</td></tr><tr><td>C balance + memory</td><td>0.096 ± 0.021</td><td>55.8% ± 9.9%</td><td>10.58 ± 0.88</td><td>12.67 ± 0.00</td><td>0.972 ± 0.061</td></tr></table>
+<p>C reduced repeated pairings compared with A and B, while B produced the smallest strength gap. These are simulated results, not a league-night experiment.</p>
+<h3>Attendance evaluation</h3><p>Source: <code>results/eval_summary.json</code>, five runs on the labeled chat. Claim precision was <strong>0.7500</strong>, recall <strong>0.1364</strong>, F1 <strong>0.2308</strong>, and final attendance accuracy <strong>0.2143</strong>. The low recall shows that the evaluated model omitted many expected claims.</p>
+<h3>Real league night</h3><p><span class="placeholder">[MY INPUT NEEDED: player count, minutes before/after, fairness ratings, trust answers, quotes, and redraw count]</span></p></section>
+<section id="limits"><div class="eyebrow">08</div><h2>8. Limits + next steps</h2>
+<p>The labeled evaluation contains real errors, not just abstract risks. Source: <code>results/eval_errors.md</code>. The recorded run produced 100 error entries across five runs; examples include expected “self/in”, “self/out”, “self/maybe”, “self/late”, guest, and third-party claims being returned as empty by the model.</p>
+<p>Ratings are subjective inputs. Outsiders cannot independently replay the draw without the organizer’s private ratings and full receipt inputs. An organizer could still bias the result by editing attendance, ratings, or the roster before confirmation. One league night would be a small sample, and the simulation uses a small sample roster with simulated attendance.</p>
+<p>The project also lacks completed real token and cost experiments because the safety budgets correctly refused them. Screenshot evidence for verification states, token usage, fallback behavior, and some draw states is still incomplete.</p>
+<p><strong>Next month:</strong> complete a permissioned real-night study; improve the attendance prompt and evaluate it against reviewed labels; complete a budget-approved cost comparison; add independent organizer/auditor review; improve the evidence capture flow; and test the public receipt verification process with an outside reviewer.</p></section>
+</main>
+</body>
+</html>

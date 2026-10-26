@@ -1,0 +1,452 @@
+[
+  {
+    "cache_hit": false,
+    "cached_input_tokens": 0,
+    "input_tokens": 11,
+    "output_tokens": 5
+  },
+  {
+    "cache_hit": false,
+    "cached_input_tokens": 0,
+    "input_tokens": 11,
+    "output_tokens": 4
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": false,
+    "cached_input_tokens": 0,
+    "input_tokens": 11,
+    "output_tokens": 4
+  },
+  {
+    "cache_hit": false,
+    "cached_input_tokens": 0,
+    "input_tokens": 491,
+    "output_tokens": 332
+  },
+  {
+    "cache_hit": false,
+    "cached_input_tokens": 0,
+    "input_tokens": 781,
+    "output_tokens": 800
+  },
+  {
+    "cache_hit": false,
+    "cached_input_tokens": 0,
+    "input_tokens": 809,
+    "output_tokens": 800
+  },
+  {
+    "cache_hit": false,
+    "cached_input_tokens": 0,
+    "input_tokens": 456,
+    "output_tokens": 282
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": false,
+    "cached_input_tokens": 0,
+    "input_tokens": 392,
+    "output_tokens": 61
+  },
+  {
+    "cache_hit": false,
+    "cached_input_tokens": 0,
+    "input_tokens": 212,
+    "output_tokens": 85
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": false,
+    "cached_input_tokens": 0,
+    "input_tokens": 781,
+    "output_tokens": 800
+  },
+  {
+    "cache_hit": false,
+    "cached_input_tokens": 0,
+    "input_tokens": 809,
+    "output_tokens": 800
+  },
+  {
+    "cache_hit": false,
+    "cached_input_tokens": 0,
+    "input_tokens": 456,
+    "output_tokens": 365
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  {
+    "cache_hit": true,
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  }
+]

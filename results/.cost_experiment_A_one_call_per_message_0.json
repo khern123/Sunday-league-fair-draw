@@ -1,0 +1,17 @@
+{
+  "b62223a9e18cc0c4425e8347d43fc8efe67b0f3c7cd1a0f704ee67f6b59e5827": {
+    "model": "gpt-6-luna",
+    "output": {
+      "claims": [
+        {
+          "evidence_snippet": "I'm in \ud83d\udc4d",
+          "guest_name": null,
+          "message_index": 0,
+          "status": "in",
+          "subject_text": "self"
+        }
+      ]
+    },
+    "purpose": "attendance_parse"
+  }
+}

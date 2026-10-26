@@ -1,0 +1,11 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+data/real/
+data/real/photos/
+results/cache.json
+.pytest-run*/
+results/traces/
+slides/qa/
+

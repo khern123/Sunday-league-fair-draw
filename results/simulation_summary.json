@@ -1,0 +1,93 @@
+{
+  "settings": {
+    "roster": "data/sample_roster.csv",
+    "nights_per_repeat": 20,
+    "repeats": 50,
+    "attendance_probability": 0.8,
+    "minimum_attendees": 10,
+    "candidates_per_draw": 300,
+    "engine": "fairdraw.draw",
+    "methods": {
+      "A: random": {
+        "use_balance": false,
+        "use_memory": false
+      },
+      "B: balance": {
+        "use_balance": true,
+        "use_memory": false
+      },
+      "C: balance + memory": {
+        "use_balance": true,
+        "use_memory": true
+      }
+    }
+  },
+  "methods": {
+    "A: random": {
+      "average_strength_gap": {
+        "average": 1.1321761904761904,
+        "std_dev": 0.17663829577125223
+      },
+      "top_two_same_team_pct": {
+        "average": 56.8,
+        "std_dev": 12.403093754941851
+      },
+      "maximum_pair_teammate_count": {
+        "average": 12.9,
+        "std_dev": 1.5286381827880497
+      },
+      "average_different_teammates_top3": {
+        "average": 12.966666666666667,
+        "std_dev": 0.13883218797250707
+      },
+      "average_repeat_score": {
+        "average": 1.0525100828261589,
+        "std_dev": 0.06534888110126406
+      }
+    },
+    "B: balance": {
+      "average_strength_gap": {
+        "average": 0.0888952380952381,
+        "std_dev": 0.01862248842911984
+      },
+      "top_two_same_team_pct": {
+        "average": 56.2,
+        "std_dev": 9.874725519305974
+      },
+      "maximum_pair_teammate_count": {
+        "average": 11.72,
+        "std_dev": 1.0887176504718656
+      },
+      "average_different_teammates_top3": {
+        "average": 12.626666666666665,
+        "std_dev": 0.14506234487359806
+      },
+      "average_repeat_score": {
+        "average": 1.0627453310354287,
+        "std_dev": 0.061298412985748084
+      }
+    },
+    "C: balance + memory": {
+      "average_strength_gap": {
+        "average": 0.09577619047619049,
+        "std_dev": 0.021214665548566748
+      },
+      "top_two_same_team_pct": {
+        "average": 55.8,
+        "std_dev": 9.864386572361182
+      },
+      "maximum_pair_teammate_count": {
+        "average": 10.58,
+        "std_dev": 0.8827138117585946
+      },
+      "average_different_teammates_top3": {
+        "average": 12.666666666666664,
+        "std_dev": 0.0
+      },
+      "average_repeat_score": {
+        "average": 0.9724802651001906,
+        "std_dev": 0.06098314278812313
+      }
+    }
+  }
+}

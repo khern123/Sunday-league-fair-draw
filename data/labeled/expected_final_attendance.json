@@ -1,0 +1,26 @@
+{
+  "status": "DRAFT - NEEDS HUMAN REVIEW",
+  "notes": "Roster-only proposal draft; guests are intentionally listed separately. Self claims use latest timestamp; third-party claims require confirmation.",
+  "players": {
+    "Ari": "out",
+    "Bea": "in",
+    "Cal": "maybe",
+    "Dev": "maybe",
+    "Eli": "in",
+    "Finn": "in",
+    "Gia": "out",
+    "Hugo": "in",
+    "Iris": "out",
+    "Jules": "maybe",
+    "Kai": "in",
+    "Lena": "out",
+    "Milo": "unknown",
+    "Nia": "maybe"
+  },
+  "late_players": ["Eli", "Hugo"],
+  "needs_confirmation": [
+    {"subject": "Sam", "status": "out", "sender": "Milo", "message_index": 12},
+    {"subject": "Bea", "status": "out", "sender": "Gia", "message_index": 20}
+  ],
+  "pending_guests": ["Tom", "Zoe"]
+}

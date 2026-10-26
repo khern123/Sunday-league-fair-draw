@@ -1,0 +1,302 @@
+# Evaluation errors
+
+- Run 1, message 0: `I'm in 👍`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 1, message 1: `can't make it this week`
+  - Expected: `[('self', 'out')]`
+  - Got: `[]`
+- Run 1, message 2: `maybe, depends on work`
+  - Expected: `[('self', 'maybe')]`
+  - Got: `[]`
+- Run 1, message 3: `in if it doesn't rain`
+  - Expected: `[('self', 'maybe')]`
+  - Got: `[]`
+- Run 1, message 4: `I'll be 20 mins late`
+  - Expected: `[('self', 'late')]`
+  - Got: `[]`
+- Run 1, message 5: `I'm in`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 1, message 6: `count me out`
+  - Expected: `[('self', 'out')]`
+  - Got: `[]`
+- Run 1, message 7: `in tonight`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 1, message 9: `I am in for the match`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 1, message 11: `bringing my cousin Tom`
+  - Expected: `[('self', 'guest_in')]`
+  - Got: `[]`
+- Run 1, message 12: `Sam is out`
+  - Expected: `[('Sam', 'out')]`
+  - Got: `[]`
+- Run 1, message 13: `I might be there, not sure yet`
+  - Expected: `[('self', 'maybe')]`
+  - Got: `[]`
+- Run 1, message 14: `Actually I can't make it`
+  - Expected: `[('self', 'out')]`
+  - Got: `[]`
+- Run 1, message 15: `wait, I can come after all`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 1, message 20: `Bee is definitely out`
+  - Expected: `[('Bee', 'out')]`
+  - Got: `[]`
+- Run 1, message 21: `I'll play, but I may be a few minutes late`
+  - Expected: `[('self', 'late')]`
+  - Got: `[]`
+- Run 1, message 22: `sorry, can't make it`
+  - Expected: `[('self', 'out')]`
+  - Got: `[]`
+- Run 1, message 23: `maybe if work finishes early`
+  - Expected: `[('self', 'maybe')]`
+  - Got: `[]`
+- Run 1, message 24: `count me in`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 1, message 29: `see you all at kickoff`
+  - Expected: `[]`
+  - Got: `[('self', 'in')]`
+- Run 2, message 0: `I'm in 👍`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 2, message 1: `can't make it this week`
+  - Expected: `[('self', 'out')]`
+  - Got: `[]`
+- Run 2, message 2: `maybe, depends on work`
+  - Expected: `[('self', 'maybe')]`
+  - Got: `[]`
+- Run 2, message 3: `in if it doesn't rain`
+  - Expected: `[('self', 'maybe')]`
+  - Got: `[]`
+- Run 2, message 4: `I'll be 20 mins late`
+  - Expected: `[('self', 'late')]`
+  - Got: `[]`
+- Run 2, message 5: `I'm in`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 2, message 6: `count me out`
+  - Expected: `[('self', 'out')]`
+  - Got: `[]`
+- Run 2, message 7: `in tonight`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 2, message 9: `I am in for the match`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 2, message 11: `bringing my cousin Tom`
+  - Expected: `[('self', 'guest_in')]`
+  - Got: `[]`
+- Run 2, message 12: `Sam is out`
+  - Expected: `[('Sam', 'out')]`
+  - Got: `[]`
+- Run 2, message 13: `I might be there, not sure yet`
+  - Expected: `[('self', 'maybe')]`
+  - Got: `[]`
+- Run 2, message 14: `Actually I can't make it`
+  - Expected: `[('self', 'out')]`
+  - Got: `[]`
+- Run 2, message 15: `wait, I can come after all`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 2, message 20: `Bee is definitely out`
+  - Expected: `[('Bee', 'out')]`
+  - Got: `[]`
+- Run 2, message 21: `I'll play, but I may be a few minutes late`
+  - Expected: `[('self', 'late')]`
+  - Got: `[]`
+- Run 2, message 22: `sorry, can't make it`
+  - Expected: `[('self', 'out')]`
+  - Got: `[]`
+- Run 2, message 23: `maybe if work finishes early`
+  - Expected: `[('self', 'maybe')]`
+  - Got: `[]`
+- Run 2, message 24: `count me in`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 2, message 29: `see you all at kickoff`
+  - Expected: `[]`
+  - Got: `[('self', 'in')]`
+- Run 3, message 0: `I'm in 👍`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 3, message 1: `can't make it this week`
+  - Expected: `[('self', 'out')]`
+  - Got: `[]`
+- Run 3, message 2: `maybe, depends on work`
+  - Expected: `[('self', 'maybe')]`
+  - Got: `[]`
+- Run 3, message 3: `in if it doesn't rain`
+  - Expected: `[('self', 'maybe')]`
+  - Got: `[]`
+- Run 3, message 4: `I'll be 20 mins late`
+  - Expected: `[('self', 'late')]`
+  - Got: `[]`
+- Run 3, message 5: `I'm in`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 3, message 6: `count me out`
+  - Expected: `[('self', 'out')]`
+  - Got: `[]`
+- Run 3, message 7: `in tonight`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 3, message 9: `I am in for the match`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 3, message 11: `bringing my cousin Tom`
+  - Expected: `[('self', 'guest_in')]`
+  - Got: `[]`
+- Run 3, message 12: `Sam is out`
+  - Expected: `[('Sam', 'out')]`
+  - Got: `[]`
+- Run 3, message 13: `I might be there, not sure yet`
+  - Expected: `[('self', 'maybe')]`
+  - Got: `[]`
+- Run 3, message 14: `Actually I can't make it`
+  - Expected: `[('self', 'out')]`
+  - Got: `[]`
+- Run 3, message 15: `wait, I can come after all`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 3, message 20: `Bee is definitely out`
+  - Expected: `[('Bee', 'out')]`
+  - Got: `[]`
+- Run 3, message 21: `I'll play, but I may be a few minutes late`
+  - Expected: `[('self', 'late')]`
+  - Got: `[]`
+- Run 3, message 22: `sorry, can't make it`
+  - Expected: `[('self', 'out')]`
+  - Got: `[]`
+- Run 3, message 23: `maybe if work finishes early`
+  - Expected: `[('self', 'maybe')]`
+  - Got: `[]`
+- Run 3, message 24: `count me in`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 3, message 29: `see you all at kickoff`
+  - Expected: `[]`
+  - Got: `[('self', 'in')]`
+- Run 4, message 0: `I'm in 👍`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 4, message 1: `can't make it this week`
+  - Expected: `[('self', 'out')]`
+  - Got: `[]`
+- Run 4, message 2: `maybe, depends on work`
+  - Expected: `[('self', 'maybe')]`
+  - Got: `[]`
+- Run 4, message 3: `in if it doesn't rain`
+  - Expected: `[('self', 'maybe')]`
+  - Got: `[]`
+- Run 4, message 4: `I'll be 20 mins late`
+  - Expected: `[('self', 'late')]`
+  - Got: `[]`
+- Run 4, message 5: `I'm in`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 4, message 6: `count me out`
+  - Expected: `[('self', 'out')]`
+  - Got: `[]`
+- Run 4, message 7: `in tonight`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 4, message 9: `I am in for the match`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 4, message 11: `bringing my cousin Tom`
+  - Expected: `[('self', 'guest_in')]`
+  - Got: `[]`
+- Run 4, message 12: `Sam is out`
+  - Expected: `[('Sam', 'out')]`
+  - Got: `[]`
+- Run 4, message 13: `I might be there, not sure yet`
+  - Expected: `[('self', 'maybe')]`
+  - Got: `[]`
+- Run 4, message 14: `Actually I can't make it`
+  - Expected: `[('self', 'out')]`
+  - Got: `[]`
+- Run 4, message 15: `wait, I can come after all`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 4, message 20: `Bee is definitely out`
+  - Expected: `[('Bee', 'out')]`
+  - Got: `[]`
+- Run 4, message 21: `I'll play, but I may be a few minutes late`
+  - Expected: `[('self', 'late')]`
+  - Got: `[]`
+- Run 4, message 22: `sorry, can't make it`
+  - Expected: `[('self', 'out')]`
+  - Got: `[]`
+- Run 4, message 23: `maybe if work finishes early`
+  - Expected: `[('self', 'maybe')]`
+  - Got: `[]`
+- Run 4, message 24: `count me in`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 4, message 29: `see you all at kickoff`
+  - Expected: `[]`
+  - Got: `[('self', 'in')]`
+- Run 5, message 0: `I'm in 👍`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 5, message 1: `can't make it this week`
+  - Expected: `[('self', 'out')]`
+  - Got: `[]`
+- Run 5, message 2: `maybe, depends on work`
+  - Expected: `[('self', 'maybe')]`
+  - Got: `[]`
+- Run 5, message 3: `in if it doesn't rain`
+  - Expected: `[('self', 'maybe')]`
+  - Got: `[]`
+- Run 5, message 4: `I'll be 20 mins late`
+  - Expected: `[('self', 'late')]`
+  - Got: `[]`
+- Run 5, message 5: `I'm in`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 5, message 6: `count me out`
+  - Expected: `[('self', 'out')]`
+  - Got: `[]`
+- Run 5, message 7: `in tonight`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 5, message 9: `I am in for the match`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 5, message 11: `bringing my cousin Tom`
+  - Expected: `[('self', 'guest_in')]`
+  - Got: `[]`
+- Run 5, message 12: `Sam is out`
+  - Expected: `[('Sam', 'out')]`
+  - Got: `[]`
+- Run 5, message 13: `I might be there, not sure yet`
+  - Expected: `[('self', 'maybe')]`
+  - Got: `[]`
+- Run 5, message 14: `Actually I can't make it`
+  - Expected: `[('self', 'out')]`
+  - Got: `[]`
+- Run 5, message 15: `wait, I can come after all`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 5, message 20: `Bee is definitely out`
+  - Expected: `[('Bee', 'out')]`
+  - Got: `[]`
+- Run 5, message 21: `I'll play, but I may be a few minutes late`
+  - Expected: `[('self', 'late')]`
+  - Got: `[]`
+- Run 5, message 22: `sorry, can't make it`
+  - Expected: `[('self', 'out')]`
+  - Got: `[]`
+- Run 5, message 23: `maybe if work finishes early`
+  - Expected: `[('self', 'maybe')]`
+  - Got: `[]`
+- Run 5, message 24: `count me in`
+  - Expected: `[('self', 'in')]`
+  - Got: `[]`
+- Run 5, message 29: `see you all at kickoff`
+  - Expected: `[]`
+  - Got: `[('self', 'in')]`

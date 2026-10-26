@@ -1,0 +1,10 @@
+{
+  "status": "refused",
+  "planned_calls": {
+    "A_one_call_per_message": 30,
+    "B_batches_of_25": 2,
+    "C_batches_plus_cache": 4
+  },
+  "total_planned_calls": 36,
+  "reason": "Refused before any model call: variant A requires 30 calls in one run, above the per-run limit of 8."
+}
