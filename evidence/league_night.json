@@ -1,9 +1,14 @@
 {
-  "players": null,
-  "minutes_before": null,
-  "minutes_with_app": null,
-  "fairness_ratings": [],
-  "trust_answers": [],
-  "redraws": null,
-  "notes": "[MY INPUT NEEDED]"
+  "players": 4,
+  "minutes_before": 2,
+  "minutes_before_is_estimate": true,
+  "minutes_with_app": 26,
+  "fairness_ratings": [1, 1, 1, 1],
+  "trust_answers": ["more", "more", "more", "more"],
+  "would_use_every_sunday": ["yes", "yes", "yes", "yes"],
+  "redraws": 2,
+  "previous_method": "Captains pick in turns",
+  "main_frustration": "Team balance",
+  "quotes": [],
+  "notes": "Values transcribed from the supplied demo feedback screenshot. The before time was marked as an estimate and was not timed."
 }
