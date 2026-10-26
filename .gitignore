@@ -8,4 +8,5 @@ results/cache.json
 .pytest-run*/
 results/traces/
 slides/qa/
+.pytest-tmp/
 
