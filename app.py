@@ -59,6 +59,9 @@ def _init_state() -> None:
 
 
 def _load_sample() -> None:
+    # Clear the previous pills value so the newly loaded sample attendance is
+    # reflected immediately after Streamlit reruns the page.
+    st.session_state.pop("squad_pills", None)
     st.session_state.roster = load_roster("sample_roster.csv", DATA)
     st.session_state.history = load_history("sample_history.json", DATA)
     st.session_state.attendance = [player.name for player in st.session_state.roster]
