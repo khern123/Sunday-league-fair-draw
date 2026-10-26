@@ -52,7 +52,7 @@ def _init_state() -> None:
         "attendance_proposals": [], "attendance_defense_events": [], "attendance_tokens": {},
         "announcement_text": "", "announcement_error": "",
         "run_trace": [],
-        "data_mode": "Sample data", "hide_ratings": True, "team_count": 2,
+        "data_mode": "Sample data", "team_count": 2,
     }
     for key, value in defaults.items():
         st.session_state.setdefault(key, value)
