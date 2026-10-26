@@ -36,7 +36,7 @@ a { color:var(--cyan); }
   <div class="eyebrow">01 · AI Foundations · Project report</div>
   <h1>1. Title + links</h1>
   <p class="lead"><strong>Sunday League Fair Draw</strong></p>
-  <p><strong>Author:</strong> <span class="placeholder">[MY INPUT NEEDED: your name]</span></p>
+  <p><strong>Author:</strong> Tarish Abubakar</p>
   <p><strong>GitHub repository:</strong> <a href="https://github.com/khern123/Sunday-league-fair-draw">https://github.com/khern123/Sunday-league-fair-draw</a></p>
   <p><strong>App:</strong> Local app, run instructions below.</p>
   <p>A code-owned, reproducible way to turn a confirmed attendance list into balanced teams, with optional AI assistance for reading attendance chat and writing announcements.</p>
@@ -46,9 +46,9 @@ a { color:var(--cyan); }
   <div class="eyebrow">02</div><h2>2. Motivation</h2>
   <p>This app is for my Sunday mini league, where the organizer needs a quick and trusted way to turn a changing attendance list into teams.</p>
   <p><strong>Who has the problem:</strong> players and the organizer in the Sunday mini league. Attendance arrives informally, often through a group chat, and the final list can change close to kickoff.</p>
-  <p><strong>Current process:</strong> <span class="placeholder">[MY INPUT NEEDED: describe exactly how teams are picked today: who decides, what information they use, and where the decision is written down]</span></p>
+  <p><strong>Current process:</strong> Captains pick in turns. This description comes from the supplied demo feedback form.</p>
   <p>When the process is manual, it can consume time during the narrow window before a match. It can also create arguments about who was included, whether teams are balanced, and whether the same people are repeatedly grouped together. The larger cost is trust: players cannot easily reproduce or verify the decision after it is made.</p>
-  <p><strong>Local evidence:</strong> <span class="placeholder">[MY INPUT NEEDED: approximate time spent, examples of disagreements, and why this matters to your league]</span></p>
+  <p><strong>Local evidence:</strong> The supplied demo recorded 4 players, 26 minutes with the app, 2 redraws, and team balance as the main frustration. The 2-minute previous-process figure was explicitly marked as an estimate, not timed.</p>
   <p>The project addresses that trust problem by requiring organizer confirmation, calculating teams in code, publishing a seed and receipt, and keeping optional AI assistance separate from the draw decision.</p>
 </section>
 
@@ -107,7 +107,7 @@ a { color:var(--cyan); }
 <table><tr><th>Method</th><th>Strength gap</th><th>Top two same team</th><th>Max pair repeats</th><th>Avg top-3 teammates</th><th>Repeat score</th></tr><tr><td>A random</td><td>1.132 ± 0.177</td><td>56.8% ± 12.4%</td><td>12.90 ± 1.53</td><td>12.97 ± 0.14</td><td>1.053 ± 0.065</td></tr><tr><td>B balance</td><td>0.089 ± 0.019</td><td>56.2% ± 9.9%</td><td>11.72 ± 1.09</td><td>12.63 ± 0.15</td><td>1.063 ± 0.061</td></tr><tr><td>C balance + memory</td><td>0.096 ± 0.021</td><td>55.8% ± 9.9%</td><td>10.58 ± 0.88</td><td>12.67 ± 0.00</td><td>0.972 ± 0.061</td></tr></table>
 <p>C reduced repeated pairings compared with A and B, while B produced the smallest strength gap. These are simulated results, not a league-night experiment.</p>
 <h3>Attendance evaluation</h3><p>Source: <code>results/eval_summary.json</code>, five runs on the labeled chat. Claim precision was <strong>0.7500</strong>, recall <strong>0.1364</strong>, F1 <strong>0.2308</strong>, and final attendance accuracy <strong>0.2143</strong>. The low recall shows that the evaluated model omitted many expected claims.</p>
-<h3>Real league night</h3><p><span class="placeholder">[MY INPUT NEEDED: player count, minutes before/after, fairness ratings, trust answers, quotes, and redraw count]</span></p></section>
+<h3>Real league night</h3><p>The supplied demo recorded 4 players, 26 minutes with the app, 2 redraws, fairness ratings of 1/5 for each respondent, and “more” trust responses from each respondent. The earlier 2-minute figure was an estimate, not a timed measurement. No quotes were supplied.</p></section>
 <section id="limits"><div class="eyebrow">08</div><h2>8. Limits + next steps</h2>
 <p>The labeled evaluation contains real errors, not just abstract risks. Source: <code>results/eval_errors.md</code>. The recorded run produced 100 error entries across five runs; examples include expected “self/in”, “self/out”, “self/maybe”, “self/late”, guest, and third-party claims being returned as empty by the model.</p>
 <p>Ratings are subjective inputs. Outsiders cannot independently replay the draw without the organizer’s private ratings and full receipt inputs. An organizer could still bias the result by editing attendance, ratings, or the roster before confirmation. One league night would be a small sample, and the simulation uses a small sample roster with simulated attendance.</p>
